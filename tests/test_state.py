@@ -8,4 +8,4 @@ def test_state_records_route_and_trace() -> None:
     state.add_trace_event("route", {"next": "researcher"})
     assert state.iteration == 1
     assert state.route_history == ["researcher"]
-    assert state.trace[0]["name"] == "route"
+    assert state.trace[0].name == "route"

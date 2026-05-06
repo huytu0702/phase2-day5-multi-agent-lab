@@ -1,0 +1,113 @@
+{"timestamp": "2026-05-06T04:10:32.945025+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 6.719998782500625e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.951134+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 7.270000060088933e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.951134+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 4.400001489557326e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.951134+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 2.820001100189984e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.951134+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 3.9799982914701104e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.951134+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 1.4499993994832039e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.951134+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 3.170000854879618e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.955722+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 1.1900003300979733e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.955722+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 2.6599998818710446e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.957131+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 2.0899984519928694e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.957445+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 3.37999954354018e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.958251+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 1.2499978765845299e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.958251+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 2.6299996534362435e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.959712+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 1.200000406242907e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.960140+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 2.5900022592395544e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.960520+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 2.0700012100860476e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:32.961568+00:00", "name": "workflow.supervisor", "attributes": {"route": "end"}, "duration_seconds": 2.9799994081258774e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:33.085162+00:00", "name": "unit.test", "attributes": {"key": "value", "extra": "ok"}, "duration_seconds": 2.200016751885414e-06, "status": "ok"}
+{"timestamp": "2026-05-06T04:10:33.085162+00:00", "name": "unit.error", "attributes": {"error_type": "ValueError", "error_message": "boom"}, "duration_seconds": 7.399998139590025e-06, "status": "error"}
+{"timestamp": "2026-05-06T04:11:03.993881+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 6.660001236014068e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:11:03.994807+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 6.049999501556158e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:11:03.995806+00:00", "name": "workflow.supervisor", "attributes": {"route": "analyst"}, "duration_seconds": 4.730001091957092e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:11:03.995806+00:00", "name": "workflow.analyst", "attributes": {}, "duration_seconds": 2.710000262595713e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:11:03.995806+00:00", "name": "workflow.supervisor", "attributes": {"route": "writer"}, "duration_seconds": 3.060000017285347e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:11:03.995806+00:00", "name": "workflow.writer", "attributes": {}, "duration_seconds": 2.609999501146376e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:11:03.995806+00:00", "name": "workflow.supervisor", "attributes": {"route": "judge"}, "duration_seconds": 3.029999788850546e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:11:03.995806+00:00", "name": "workflow.judge", "attributes": {"passed": true}, "duration_seconds": 4.8999994760379195e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:11:03.995806+00:00", "name": "workflow.supervisor", "attributes": {"route": "end"}, "duration_seconds": 4.019998596049845e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:11:04.000916+00:00", "name": "unit.test", "attributes": {"key": "value", "extra": "ok"}, "duration_seconds": 1.6999838408082724e-06, "status": "ok"}
+{"timestamp": "2026-05-06T04:11:04.000916+00:00", "name": "unit.error", "attributes": {"error_type": "ValueError", "error_message": "boom"}, "duration_seconds": 8.700008038431406e-06, "status": "error"}
+{"timestamp": "2026-05-06T04:12:49.292702+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 7.460001506842673e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:12:49.294700+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 9.640000644139946e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:12:49.295663+00:00", "name": "workflow.supervisor", "attributes": {"route": "analyst"}, "duration_seconds": 5.7199998991563916e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:12:49.295663+00:00", "name": "workflow.analyst", "attributes": {}, "duration_seconds": 4.499999340623617e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:12:49.295663+00:00", "name": "workflow.supervisor", "attributes": {"route": "writer"}, "duration_seconds": 4.119999357499182e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:12:49.297673+00:00", "name": "workflow.writer", "attributes": {}, "duration_seconds": 3.5900011425837874e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:12:49.297673+00:00", "name": "workflow.supervisor", "attributes": {"route": "judge"}, "duration_seconds": 3.880000440403819e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:12:49.297673+00:00", "name": "workflow.judge", "attributes": {"passed": true}, "duration_seconds": 8.560001151636243e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:12:49.300235+00:00", "name": "workflow.supervisor", "attributes": {"route": "end"}, "duration_seconds": 5.949998740106821e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:12:49.303260+00:00", "name": "unit.test", "attributes": {"key": "value", "extra": "ok"}, "duration_seconds": 2.5999906938523054e-06, "status": "ok"}
+{"timestamp": "2026-05-06T04:12:49.304253+00:00", "name": "unit.error", "attributes": {"error_type": "ValueError", "error_message": "boom"}, "duration_seconds": 1.0700023267418146e-05, "status": "error"}
+{"timestamp": "2026-05-06T04:13:51.523236+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 5.040000542066991e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:13:51.524233+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 4.569999873638153e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:13:51.525245+00:00", "name": "workflow.supervisor", "attributes": {"route": "analyst"}, "duration_seconds": 4.939999780617654e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:13:51.526233+00:00", "name": "workflow.analyst", "attributes": {}, "duration_seconds": 1.7999991541728377e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:13:51.527227+00:00", "name": "workflow.supervisor", "attributes": {"route": "writer"}, "duration_seconds": 3.259998629800975e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:13:51.528242+00:00", "name": "workflow.writer", "attributes": {}, "duration_seconds": 1.680001150816679e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:13:51.528242+00:00", "name": "workflow.supervisor", "attributes": {"route": "judge"}, "duration_seconds": 3.640001523308456e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:13:51.529241+00:00", "name": "workflow.judge", "attributes": {"passed": true}, "duration_seconds": 6.489999941550195e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:13:51.530231+00:00", "name": "workflow.supervisor", "attributes": {"route": "end"}, "duration_seconds": 3.589998232200742e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:13:51.532238+00:00", "name": "unit.test", "attributes": {"key": "value", "extra": "ok"}, "duration_seconds": 2.200016751885414e-06, "status": "ok"}
+{"timestamp": "2026-05-06T04:13:51.534229+00:00", "name": "unit.error", "attributes": {"error_type": "ValueError", "error_message": "boom"}, "duration_seconds": 9.400013368576765e-06, "status": "error"}
+{"timestamp": "2026-05-06T04:15:49.940372+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 6.240000948309898e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:15:49.940372+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 3.160000778734684e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:15:49.940372+00:00", "name": "workflow.supervisor", "attributes": {"route": "analyst"}, "duration_seconds": 3.509997623041272e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:15:49.940372+00:00", "name": "workflow.analyst", "attributes": {}, "duration_seconds": 1.680001150816679e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:15:49.940372+00:00", "name": "workflow.supervisor", "attributes": {"route": "writer"}, "duration_seconds": 3.0099996365606785e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:15:49.946039+00:00", "name": "workflow.writer", "attributes": {}, "duration_seconds": 2.3500004317611456e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:15:49.946039+00:00", "name": "workflow.supervisor", "attributes": {"route": "judge"}, "duration_seconds": 4.300000728107989e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:15:49.946039+00:00", "name": "workflow.judge", "attributes": {"passed": true}, "duration_seconds": 6.220000796020031e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:15:49.946039+00:00", "name": "workflow.supervisor", "attributes": {"route": "end"}, "duration_seconds": 2.95999925583601e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:17:29.349799+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 6.980000762268901e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:17:29.351812+00:00", "name": "workflow.researcher", "attributes": {"error_type": "SearchConfigError", "error_message": "tavily-python package is required when tavily_client is not provided"}, "duration_seconds": 0.00047400000039488077, "status": "error"}
+{"timestamp": "2026-05-06T04:18:01.334568+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 4.7299981815740466e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.336616+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 0.00041599999531172216, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.337604+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 3.4900003811344504e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.337604+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 0.0003316999936942011, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.338687+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 3.309999010525644e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.338687+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 0.0003527999797370285, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.338687+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 3.539997851476073e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.338687+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 0.00032289998489432037, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.338687+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 3.0099996365606785e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.338687+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 0.0003279999946244061, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.343906+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 2.850001328624785e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.343906+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 0.0003040000156033784, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.344914+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 3.429999924264848e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.345912+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 0.000318799982778728, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.345912+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 2.440001117065549e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.346913+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 0.000295600009849295, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.347920+00:00", "name": "workflow.supervisor", "attributes": {"route": "end"}, "duration_seconds": 2.8000009479001164e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.459611+00:00", "name": "unit.test", "attributes": {"key": "value", "extra": "ok"}, "duration_seconds": 2.9999937396496534e-06, "status": "ok"}
+{"timestamp": "2026-05-06T04:18:01.459611+00:00", "name": "unit.error", "attributes": {"error_type": "ValueError", "error_message": "boom"}, "duration_seconds": 7.200025720521808e-06, "status": "error"}
+{"timestamp": "2026-05-06T04:19:31.293026+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 9.809999028220773e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:19:33.496213+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 2.2011864999949466, "status": "ok"}
+{"timestamp": "2026-05-06T04:19:33.497214+00:00", "name": "workflow.supervisor", "attributes": {"route": "analyst"}, "duration_seconds": 4.300000728107989e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:19:33.498214+00:00", "name": "workflow.analyst", "attributes": {}, "duration_seconds": 2.829998265951872e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:19:33.498214+00:00", "name": "workflow.supervisor", "attributes": {"route": "writer"}, "duration_seconds": 2.8000009479001164e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:19:33.499213+00:00", "name": "workflow.writer", "attributes": {}, "duration_seconds": 2.929999027401209e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:19:33.499213+00:00", "name": "workflow.supervisor", "attributes": {"route": "judge"}, "duration_seconds": 2.680000034160912e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:19:33.500206+00:00", "name": "workflow.judge", "attributes": {"passed": true}, "duration_seconds": 0.00010810000821948051, "status": "ok"}
+{"timestamp": "2026-05-06T04:19:33.500206+00:00", "name": "workflow.supervisor", "attributes": {"route": "end"}, "duration_seconds": 2.4599983589723706e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:20:11.370760+00:00", "name": "unit.test", "attributes": {"key": "value", "extra": "ok"}, "duration_seconds": 2.700020559132099e-06, "status": "ok"}
+{"timestamp": "2026-05-06T04:20:11.371769+00:00", "name": "unit.error", "attributes": {"error_type": "ValueError", "error_message": "boom"}, "duration_seconds": 1.0600022505968809e-05, "status": "error"}
+{"timestamp": "2026-05-06T04:20:11.663609+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 4.4599990360438824e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:20:13.033074+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 1.3668541999941226, "status": "ok"}
+{"timestamp": "2026-05-06T04:20:13.033898+00:00", "name": "workflow.supervisor", "attributes": {"route": "analyst"}, "duration_seconds": 6.730001769028604e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:20:13.033898+00:00", "name": "workflow.analyst", "attributes": {}, "duration_seconds": 2.7000001864507794e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:20:13.033898+00:00", "name": "workflow.supervisor", "attributes": {"route": "writer"}, "duration_seconds": 3.399999695830047e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:20:13.033898+00:00", "name": "workflow.writer", "attributes": {}, "duration_seconds": 1.7299986211583018e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:20:13.033898+00:00", "name": "workflow.supervisor", "attributes": {"route": "judge"}, "duration_seconds": 3.0099996365606785e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:20:13.033898+00:00", "name": "workflow.judge", "attributes": {"passed": true}, "duration_seconds": 4.379998426884413e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:20:13.039166+00:00", "name": "workflow.supervisor", "attributes": {"route": "end"}, "duration_seconds": 3.42000275850296e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:21:55.657940+00:00", "name": "unit.test", "attributes": {"key": "value", "extra": "ok"}, "duration_seconds": 2.5999906938523054e-06, "status": "ok"}
+{"timestamp": "2026-05-06T04:21:55.658940+00:00", "name": "unit.error", "attributes": {"error_type": "ValueError", "error_message": "boom"}, "duration_seconds": 9.199982741847634e-06, "status": "error"}
+{"timestamp": "2026-05-06T04:21:55.938790+00:00", "name": "workflow.supervisor", "attributes": {"route": "researcher"}, "duration_seconds": 5.470000905916095e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:21:57.490269+00:00", "name": "workflow.researcher", "attributes": {}, "duration_seconds": 1.551292599993758, "status": "ok"}
+{"timestamp": "2026-05-06T04:21:57.494005+00:00", "name": "workflow.supervisor", "attributes": {"route": "analyst"}, "duration_seconds": 4.1399995097890496e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:21:57.494005+00:00", "name": "workflow.analyst", "attributes": {}, "duration_seconds": 1.7099984688684344e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:21:57.494005+00:00", "name": "workflow.supervisor", "attributes": {"route": "writer"}, "duration_seconds": 4.379998426884413e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:21:57.496011+00:00", "name": "workflow.writer", "attributes": {}, "duration_seconds": 1.689998316578567e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:21:57.496011+00:00", "name": "workflow.supervisor", "attributes": {"route": "judge"}, "duration_seconds": 2.479998511262238e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:21:57.496011+00:00", "name": "workflow.judge", "attributes": {"passed": true}, "duration_seconds": 4.099999205209315e-05, "status": "ok"}
+{"timestamp": "2026-05-06T04:21:57.496011+00:00", "name": "workflow.supervisor", "attributes": {"route": "end"}, "duration_seconds": 2.269999822601676e-05, "status": "ok"}
