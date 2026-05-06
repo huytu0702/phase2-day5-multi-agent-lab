@@ -53,6 +53,7 @@ def baseline(
 @app.command("multi-agent")
 def multi_agent(
     query: Annotated[str, typer.Option("--query", "-q", help="Research query")],
+    json_output: Annotated[bool, typer.Option("--json", help="Print full workflow state as JSON")] = False,
 ) -> None:
     """Run the multi-agent workflow."""
 
@@ -61,7 +62,13 @@ def multi_agent(
     state = ResearchState(request=ResearchQuery(query=query), max_iterations=settings.max_iterations)
     workflow = MultiAgentWorkflow()
     result = workflow.run(state)
-    console.print(result.model_dump_json(indent=2))
+
+    if json_output:
+        console.print(result.model_dump_json(indent=2))
+        return
+
+    answer = result.final_answer or "No final answer was produced."
+    console.print(Panel.fit(answer, title="Multi-Agent Answer"))
 
 
 @app.command("benchmark")

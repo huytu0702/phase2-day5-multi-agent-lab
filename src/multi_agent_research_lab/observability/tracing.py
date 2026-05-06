@@ -17,7 +17,7 @@ def _copy_attributes(attributes: dict[str, Any] | None) -> dict[str, Any]:
 
 
 class _LangfuseV4Adapter:
-    """Optional Langfuse v4 adapter."""
+    """Optional Langfuse adapter enabled by environment."""
 
     def __init__(self) -> None:
         self._client: Any | None = None
@@ -26,7 +26,8 @@ class _LangfuseV4Adapter:
         try:
             from langfuse import Langfuse  # type: ignore
 
-            self._client = Langfuse()
+            host = os.getenv("LANGFUSE_HOST") or os.getenv("LANGFUSE_BASE_URL")
+            self._client = Langfuse(host=host) if host else Langfuse()
         except Exception:
             self._client = None
 
@@ -34,7 +35,12 @@ class _LangfuseV4Adapter:
         if self._client is None:
             return
         try:
-            self._client.trace(name=event.get("name", "span"), metadata=event)
+            self._client.create_event(
+                name=str(event.get("name", "span")),
+                input=event.get("attributes"),
+                metadata=event,
+            )
+            self._client.flush()
         except Exception:
             return
 
