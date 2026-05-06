@@ -1,0 +1,956 @@
+[
+  {
+    "id": "45adebeae6acd514a00f418bbfc6614c",
+    "projectId": "cmotik77z02wqad086li7q3bz",
+    "name": "workflow.supervisor",
+    "timestamp": "2026-05-06T04:49:44.662Z",
+    "environment": "default",
+    "tags": [],
+    "bookmarked": false,
+    "release": null,
+    "version": null,
+    "userId": null,
+    "sessionId": null,
+    "public": false,
+    "input": {
+      "iteration": 4,
+      "route_history": [
+        "researcher",
+        "analyst",
+        "writer",
+        "judge"
+      ],
+      "has_sources": true,
+      "has_research_notes": true,
+      "has_analysis_notes": true,
+      "has_final_answer": true
+    },
+    "output": {
+      "route": "end",
+      "stop_reason": "completed"
+    },
+    "metadata": {
+      "query": "Verify writer full final answer in trace",
+      "max_iterations": 6,
+      "resourceAttributes": {
+        "telemetry.sdk.language": "python",
+        "telemetry.sdk.name": "opentelemetry",
+        "telemetry.sdk.version": "1.41.1",
+        "service.name": "unknown_service"
+      },
+      "scope": {
+        "name": "langfuse-sdk",
+        "version": "3.14.6",
+        "attributes": {
+          "public_key": "pk-lf-d7a58bae-cc8a-4181-a9ca-8d7aa26348ce"
+        }
+      },
+      "timestamp": "2026-05-06T04:49:51.134428+00:00",
+      "name": "workflow.supervisor",
+      "attributes": {
+        "route": "end"
+      },
+      "input": {
+        "iteration": 4,
+        "route_history": [
+          "researcher",
+          "analyst",
+          "writer",
+          "judge"
+        ],
+        "has_sources": true,
+        "has_research_notes": true,
+        "has_analysis_notes": true,
+        "has_final_answer": true
+      },
+      "output": {
+        "route": "end",
+        "stop_reason": "completed"
+      },
+      "duration_seconds": 4.959999932907522e-05,
+      "status": "ok"
+    },
+    "createdAt": "2026-05-06T04:49:46.000Z",
+    "updatedAt": "2026-05-06T04:49:51.633Z",
+    "externalId": null,
+    "scores": [],
+    "latency": 6.472,
+    "observations": [
+      {
+        "id": "0409c9591fb8fbe5",
+        "traceId": "45adebeae6acd514a00f418bbfc6614c",
+        "startTime": "2026-05-06T04:49:44.662Z",
+        "endTime": null,
+        "projectId": "cmotik77z02wqad086li7q3bz",
+        "parentObservationId": "c0c848cf380e8930",
+        "type": "EVENT",
+        "environment": "default",
+        "name": "workflow.run",
+        "level": "DEFAULT",
+        "statusMessage": null,
+        "version": null,
+        "createdAt": "2026-05-06T04:49:45.915Z",
+        "updatedAt": "2026-05-06T04:49:45.915Z",
+        "input": null,
+        "output": null,
+        "metadata": {
+          "query": "Verify writer full final answer in trace",
+          "max_iterations": 6,
+          "resourceAttributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.41.1",
+            "service.name": "unknown_service"
+          },
+          "scope": {
+            "name": "langfuse-sdk",
+            "version": "3.14.6",
+            "attributes": {
+              "public_key": "pk-lf-d7a58bae-cc8a-4181-a9ca-8d7aa26348ce"
+            }
+          }
+        },
+        "model": null,
+        "modelParameters": null,
+        "completionStartTime": null,
+        "promptId": null,
+        "promptName": null,
+        "promptVersion": null,
+        "latency": null,
+        "timeToFirstToken": null,
+        "usageDetails": {},
+        "costDetails": {},
+        "usagePricingTierId": null,
+        "usagePricingTierName": null,
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "totalPrice": 0,
+        "calculatedInputCost": null,
+        "calculatedOutputCost": null,
+        "calculatedTotalCost": 0,
+        "unit": "TOKENS",
+        "promptTokens": 0,
+        "completionTokens": 0,
+        "totalTokens": 0,
+        "modelId": null,
+        "usage": {
+          "unit": "TOKENS",
+          "input": 0,
+          "output": 0,
+          "total": 0
+        }
+      },
+      {
+        "id": "0be16972e9576542",
+        "traceId": "45adebeae6acd514a00f418bbfc6614c",
+        "startTime": "2026-05-06T04:49:49.274Z",
+        "endTime": null,
+        "projectId": "cmotik77z02wqad086li7q3bz",
+        "parentObservationId": "e299f9a2a28d27d1",
+        "type": "EVENT",
+        "environment": "default",
+        "name": "workflow.supervisor",
+        "level": "DEFAULT",
+        "statusMessage": null,
+        "version": null,
+        "createdAt": "2026-05-06T04:49:49.716Z",
+        "updatedAt": "2026-05-06T04:49:49.716Z",
+        "input": {
+          "iteration": 1,
+          "route_history": [
+            "researcher"
+          ],
+          "has_sources": true,
+          "has_research_notes": true,
+          "has_analysis_notes": false,
+          "has_final_answer": false
+        },
+        "output": {
+          "route": "analyst",
+          "stop_reason": null
+        },
+        "metadata": {
+          "timestamp": "2026-05-06T04:49:49.274534+00:00",
+          "name": "workflow.supervisor",
+          "attributes": {
+            "route": "analyst"
+          },
+          "input": {
+            "iteration": 1,
+            "route_history": [
+              "researcher"
+            ],
+            "has_sources": true,
+            "has_research_notes": true,
+            "has_analysis_notes": false,
+            "has_final_answer": false
+          },
+          "output": {
+            "route": "analyst",
+            "stop_reason": null
+          },
+          "duration_seconds": 5.679999594576657e-05,
+          "status": "ok",
+          "resourceAttributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.41.1",
+            "service.name": "unknown_service"
+          },
+          "scope": {
+            "name": "langfuse-sdk",
+            "version": "3.14.6",
+            "attributes": {
+              "public_key": "pk-lf-d7a58bae-cc8a-4181-a9ca-8d7aa26348ce"
+            }
+          }
+        },
+        "model": null,
+        "modelParameters": null,
+        "completionStartTime": null,
+        "promptId": null,
+        "promptName": null,
+        "promptVersion": null,
+        "latency": null,
+        "timeToFirstToken": null,
+        "usageDetails": {},
+        "costDetails": {},
+        "usagePricingTierId": null,
+        "usagePricingTierName": null,
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "totalPrice": 0,
+        "calculatedInputCost": null,
+        "calculatedOutputCost": null,
+        "calculatedTotalCost": 0,
+        "unit": "TOKENS",
+        "promptTokens": 0,
+        "completionTokens": 0,
+        "totalTokens": 0,
+        "modelId": null,
+        "usage": {
+          "unit": "TOKENS",
+          "input": 0,
+          "output": 0,
+          "total": 0
+        }
+      },
+      {
+        "id": "6606f47d3b47ec73",
+        "traceId": "45adebeae6acd514a00f418bbfc6614c",
+        "startTime": "2026-05-06T04:49:48.912Z",
+        "endTime": null,
+        "projectId": "cmotik77z02wqad086li7q3bz",
+        "parentObservationId": "760d43935da6b78c",
+        "type": "EVENT",
+        "environment": "default",
+        "name": "workflow.researcher",
+        "level": "DEFAULT",
+        "statusMessage": null,
+        "version": null,
+        "createdAt": "2026-05-06T04:49:49.365Z",
+        "updatedAt": "2026-05-06T04:49:49.366Z",
+        "input": {
+          "query": "Verify writer full final answer in trace",
+          "max_sources": 5
+        },
+        "output": {
+          "source_count": 5,
+          "has_research_notes": true
+        },
+        "metadata": {
+          "timestamp": "2026-05-06T04:49:48.911011+00:00",
+          "name": "workflow.researcher",
+          "attributes": {},
+          "input": {
+            "query": "Verify writer full final answer in trace",
+            "max_sources": 5
+          },
+          "output": {
+            "source_count": 5,
+            "has_research_notes": true
+          },
+          "duration_seconds": 2.2781337999913376,
+          "status": "ok",
+          "resourceAttributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.41.1",
+            "service.name": "unknown_service"
+          },
+          "scope": {
+            "name": "langfuse-sdk",
+            "version": "3.14.6",
+            "attributes": {
+              "public_key": "pk-lf-d7a58bae-cc8a-4181-a9ca-8d7aa26348ce"
+            }
+          }
+        },
+        "model": null,
+        "modelParameters": null,
+        "completionStartTime": null,
+        "promptId": null,
+        "promptName": null,
+        "promptVersion": null,
+        "latency": null,
+        "timeToFirstToken": null,
+        "usageDetails": {},
+        "costDetails": {},
+        "usagePricingTierId": null,
+        "usagePricingTierName": null,
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "totalPrice": 0,
+        "calculatedInputCost": null,
+        "calculatedOutputCost": null,
+        "calculatedTotalCost": 0,
+        "unit": "TOKENS",
+        "promptTokens": 0,
+        "completionTokens": 0,
+        "totalTokens": 0,
+        "modelId": null,
+        "usage": {
+          "unit": "TOKENS",
+          "input": 0,
+          "output": 0,
+          "total": 0
+        }
+      },
+      {
+        "id": "85ec3b7a848dbb25",
+        "traceId": "45adebeae6acd514a00f418bbfc6614c",
+        "startTime": "2026-05-06T04:49:49.597Z",
+        "endTime": null,
+        "projectId": "cmotik77z02wqad086li7q3bz",
+        "parentObservationId": "bbf9451d7470ac92",
+        "type": "EVENT",
+        "environment": "default",
+        "name": "workflow.analyst",
+        "level": "DEFAULT",
+        "statusMessage": null,
+        "version": null,
+        "createdAt": "2026-05-06T04:49:50.039Z",
+        "updatedAt": "2026-05-06T04:49:50.041Z",
+        "input": {
+          "source_count": 5,
+          "has_research_notes": true
+        },
+        "output": {
+          "has_analysis_notes": true
+        },
+        "metadata": {
+          "timestamp": "2026-05-06T04:49:49.597425+00:00",
+          "name": "workflow.analyst",
+          "attributes": {},
+          "input": {
+            "source_count": 5,
+            "has_research_notes": true
+          },
+          "output": {
+            "has_analysis_notes": true
+          },
+          "duration_seconds": 4.129999433644116e-05,
+          "status": "ok",
+          "resourceAttributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.41.1",
+            "service.name": "unknown_service"
+          },
+          "scope": {
+            "name": "langfuse-sdk",
+            "version": "3.14.6",
+            "attributes": {
+              "public_key": "pk-lf-d7a58bae-cc8a-4181-a9ca-8d7aa26348ce"
+            }
+          }
+        },
+        "model": null,
+        "modelParameters": null,
+        "completionStartTime": null,
+        "promptId": null,
+        "promptName": null,
+        "promptVersion": null,
+        "latency": null,
+        "timeToFirstToken": null,
+        "usageDetails": {},
+        "costDetails": {},
+        "usagePricingTierId": null,
+        "usagePricingTierName": null,
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "totalPrice": 0,
+        "calculatedInputCost": null,
+        "calculatedOutputCost": null,
+        "calculatedTotalCost": 0,
+        "unit": "TOKENS",
+        "promptTokens": 0,
+        "completionTokens": 0,
+        "totalTokens": 0,
+        "modelId": null,
+        "usage": {
+          "unit": "TOKENS",
+          "input": 0,
+          "output": 0,
+          "total": 0
+        }
+      },
+      {
+        "id": "88ddd95daf91148d",
+        "traceId": "45adebeae6acd514a00f418bbfc6614c",
+        "startTime": "2026-05-06T04:49:49.922Z",
+        "endTime": null,
+        "projectId": "cmotik77z02wqad086li7q3bz",
+        "parentObservationId": "3cc6d087800ec82d",
+        "type": "EVENT",
+        "environment": "default",
+        "name": "workflow.supervisor",
+        "level": "DEFAULT",
+        "statusMessage": null,
+        "version": null,
+        "createdAt": "2026-05-06T04:49:50.364Z",
+        "updatedAt": "2026-05-06T04:49:50.365Z",
+        "input": {
+          "iteration": 2,
+          "route_history": [
+            "researcher",
+            "analyst"
+          ],
+          "has_sources": true,
+          "has_research_notes": true,
+          "has_analysis_notes": true,
+          "has_final_answer": false
+        },
+        "output": {
+          "route": "writer",
+          "stop_reason": null
+        },
+        "metadata": {
+          "timestamp": "2026-05-06T04:49:49.922057+00:00",
+          "name": "workflow.supervisor",
+          "attributes": {
+            "route": "writer"
+          },
+          "input": {
+            "iteration": 2,
+            "route_history": [
+              "researcher",
+              "analyst"
+            ],
+            "has_sources": true,
+            "has_research_notes": true,
+            "has_analysis_notes": true,
+            "has_final_answer": false
+          },
+          "output": {
+            "route": "writer",
+            "stop_reason": null
+          },
+          "duration_seconds": 4.8299989430233836e-05,
+          "status": "ok",
+          "resourceAttributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.41.1",
+            "service.name": "unknown_service"
+          },
+          "scope": {
+            "name": "langfuse-sdk",
+            "version": "3.14.6",
+            "attributes": {
+              "public_key": "pk-lf-d7a58bae-cc8a-4181-a9ca-8d7aa26348ce"
+            }
+          }
+        },
+        "model": null,
+        "modelParameters": null,
+        "completionStartTime": null,
+        "promptId": null,
+        "promptName": null,
+        "promptVersion": null,
+        "latency": null,
+        "timeToFirstToken": null,
+        "usageDetails": {},
+        "costDetails": {},
+        "usagePricingTierId": null,
+        "usagePricingTierName": null,
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "totalPrice": 0,
+        "calculatedInputCost": null,
+        "calculatedOutputCost": null,
+        "calculatedTotalCost": 0,
+        "unit": "TOKENS",
+        "promptTokens": 0,
+        "completionTokens": 0,
+        "totalTokens": 0,
+        "modelId": null,
+        "usage": {
+          "unit": "TOKENS",
+          "input": 0,
+          "output": 0,
+          "total": 0
+        }
+      },
+      {
+        "id": "9f66ca8506fe9645",
+        "traceId": "45adebeae6acd514a00f418bbfc6614c",
+        "startTime": "2026-05-06T04:49:50.231Z",
+        "endTime": null,
+        "projectId": "cmotik77z02wqad086li7q3bz",
+        "parentObservationId": "d7af36d4a4d3946e",
+        "type": "EVENT",
+        "environment": "default",
+        "name": "workflow.writer",
+        "level": "DEFAULT",
+        "statusMessage": null,
+        "version": null,
+        "createdAt": "2026-05-06T04:49:50.671Z",
+        "updatedAt": "2026-05-06T04:49:50.671Z",
+        "input": {
+          "has_analysis_notes": true,
+          "source_count": 5
+        },
+        "output": {
+          "has_final_answer": true,
+          "final_answer": "Answer for: Verify writer full final answer in trace\n\nSummary:\n- Based on the collected sources and analysis, the response is evidence-backed but concise.\n\nCitations: [1] [2] [3] [4] [5]\n\nLimitations:\n- Source set may be incomplete.\n- Snippets may omit full context from original documents."
+        },
+        "metadata": {
+          "timestamp": "2026-05-06T04:49:50.231639+00:00",
+          "name": "workflow.writer",
+          "attributes": {},
+          "input": {
+            "has_analysis_notes": true,
+            "source_count": 5
+          },
+          "output": {
+            "has_final_answer": true,
+            "final_answer": "Answer for: Verify writer full final answer in trace\n\nSummary:\n- Based on the collected sources and analysis, the response is evidence-backed but concise.\n\nCitations: [1] [2] [3] [4] [5]\n\nLimitations:\n- Source set may be incomplete.\n- Snippets may omit full context from original documents."
+          },
+          "duration_seconds": 8.319999324157834e-05,
+          "status": "ok",
+          "resourceAttributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.41.1",
+            "service.name": "unknown_service"
+          },
+          "scope": {
+            "name": "langfuse-sdk",
+            "version": "3.14.6",
+            "attributes": {
+              "public_key": "pk-lf-d7a58bae-cc8a-4181-a9ca-8d7aa26348ce"
+            }
+          }
+        },
+        "model": null,
+        "modelParameters": null,
+        "completionStartTime": null,
+        "promptId": null,
+        "promptName": null,
+        "promptVersion": null,
+        "latency": null,
+        "timeToFirstToken": null,
+        "usageDetails": {},
+        "costDetails": {},
+        "usagePricingTierId": null,
+        "usagePricingTierName": null,
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "totalPrice": 0,
+        "calculatedInputCost": null,
+        "calculatedOutputCost": null,
+        "calculatedTotalCost": 0,
+        "unit": "TOKENS",
+        "promptTokens": 0,
+        "completionTokens": 0,
+        "totalTokens": 0,
+        "modelId": null,
+        "usage": {
+          "unit": "TOKENS",
+          "input": 0,
+          "output": 0,
+          "total": 0
+        }
+      },
+      {
+        "id": "bd6842708dc08462",
+        "traceId": "45adebeae6acd514a00f418bbfc6614c",
+        "startTime": "2026-05-06T04:49:51.134Z",
+        "endTime": null,
+        "projectId": "cmotik77z02wqad086li7q3bz",
+        "parentObservationId": "842a2acd78e015f2",
+        "type": "EVENT",
+        "environment": "default",
+        "name": "workflow.supervisor",
+        "level": "DEFAULT",
+        "statusMessage": null,
+        "version": null,
+        "createdAt": "2026-05-06T04:49:51.559Z",
+        "updatedAt": "2026-05-06T04:49:51.559Z",
+        "input": {
+          "iteration": 4,
+          "route_history": [
+            "researcher",
+            "analyst",
+            "writer",
+            "judge"
+          ],
+          "has_sources": true,
+          "has_research_notes": true,
+          "has_analysis_notes": true,
+          "has_final_answer": true
+        },
+        "output": {
+          "route": "end",
+          "stop_reason": "completed"
+        },
+        "metadata": {
+          "timestamp": "2026-05-06T04:49:51.134428+00:00",
+          "name": "workflow.supervisor",
+          "attributes": {
+            "route": "end"
+          },
+          "input": {
+            "iteration": 4,
+            "route_history": [
+              "researcher",
+              "analyst",
+              "writer",
+              "judge"
+            ],
+            "has_sources": true,
+            "has_research_notes": true,
+            "has_analysis_notes": true,
+            "has_final_answer": true
+          },
+          "output": {
+            "route": "end",
+            "stop_reason": "completed"
+          },
+          "duration_seconds": 4.959999932907522e-05,
+          "status": "ok",
+          "resourceAttributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.41.1",
+            "service.name": "unknown_service"
+          },
+          "scope": {
+            "name": "langfuse-sdk",
+            "version": "3.14.6",
+            "attributes": {
+              "public_key": "pk-lf-d7a58bae-cc8a-4181-a9ca-8d7aa26348ce"
+            }
+          }
+        },
+        "model": null,
+        "modelParameters": null,
+        "completionStartTime": null,
+        "promptId": null,
+        "promptName": null,
+        "promptVersion": null,
+        "latency": null,
+        "timeToFirstToken": null,
+        "usageDetails": {},
+        "costDetails": {},
+        "usagePricingTierId": null,
+        "usagePricingTierName": null,
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "totalPrice": 0,
+        "calculatedInputCost": null,
+        "calculatedOutputCost": null,
+        "calculatedTotalCost": 0,
+        "unit": "TOKENS",
+        "promptTokens": 0,
+        "completionTokens": 0,
+        "totalTokens": 0,
+        "modelId": null,
+        "usage": {
+          "unit": "TOKENS",
+          "input": 0,
+          "output": 0,
+          "total": 0
+        }
+      },
+      {
+        "id": "c2e1a438aad0932a",
+        "traceId": "45adebeae6acd514a00f418bbfc6614c",
+        "startTime": "2026-05-06T04:49:46.232Z",
+        "endTime": null,
+        "projectId": "cmotik77z02wqad086li7q3bz",
+        "parentObservationId": "f28b5c956d4c3aa3",
+        "type": "EVENT",
+        "environment": "default",
+        "name": "workflow.supervisor",
+        "level": "DEFAULT",
+        "statusMessage": null,
+        "version": null,
+        "createdAt": "2026-05-06T04:49:46.672Z",
+        "updatedAt": "2026-05-06T04:49:46.675Z",
+        "input": {
+          "iteration": 0,
+          "route_history": [],
+          "has_sources": false,
+          "has_research_notes": false,
+          "has_analysis_notes": false,
+          "has_final_answer": false
+        },
+        "output": {
+          "route": "researcher",
+          "stop_reason": null
+        },
+        "metadata": {
+          "timestamp": "2026-05-06T04:49:46.232373+00:00",
+          "name": "workflow.supervisor",
+          "attributes": {
+            "route": "researcher"
+          },
+          "input": {
+            "iteration": 0,
+            "route_history": [],
+            "has_sources": false,
+            "has_research_notes": false,
+            "has_analysis_notes": false,
+            "has_final_answer": false
+          },
+          "output": {
+            "route": "researcher",
+            "stop_reason": null
+          },
+          "duration_seconds": 6.910000229254365e-05,
+          "status": "ok",
+          "resourceAttributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.41.1",
+            "service.name": "unknown_service"
+          },
+          "scope": {
+            "name": "langfuse-sdk",
+            "version": "3.14.6",
+            "attributes": {
+              "public_key": "pk-lf-d7a58bae-cc8a-4181-a9ca-8d7aa26348ce"
+            }
+          }
+        },
+        "model": null,
+        "modelParameters": null,
+        "completionStartTime": null,
+        "promptId": null,
+        "promptName": null,
+        "promptVersion": null,
+        "latency": null,
+        "timeToFirstToken": null,
+        "usageDetails": {},
+        "costDetails": {},
+        "usagePricingTierId": null,
+        "usagePricingTierName": null,
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "totalPrice": 0,
+        "calculatedInputCost": null,
+        "calculatedOutputCost": null,
+        "calculatedTotalCost": 0,
+        "unit": "TOKENS",
+        "promptTokens": 0,
+        "completionTokens": 0,
+        "totalTokens": 0,
+        "modelId": null,
+        "usage": {
+          "unit": "TOKENS",
+          "input": 0,
+          "output": 0,
+          "total": 0
+        }
+      },
+      {
+        "id": "fac8d99a2851acaf",
+        "traceId": "45adebeae6acd514a00f418bbfc6614c",
+        "startTime": "2026-05-06T04:49:50.534Z",
+        "endTime": null,
+        "projectId": "cmotik77z02wqad086li7q3bz",
+        "parentObservationId": "dbf2af65403ff488",
+        "type": "EVENT",
+        "environment": "default",
+        "name": "workflow.supervisor",
+        "level": "DEFAULT",
+        "statusMessage": null,
+        "version": null,
+        "createdAt": "2026-05-06T04:49:50.963Z",
+        "updatedAt": "2026-05-06T04:49:50.964Z",
+        "input": {
+          "iteration": 3,
+          "route_history": [
+            "researcher",
+            "analyst",
+            "writer"
+          ],
+          "has_sources": true,
+          "has_research_notes": true,
+          "has_analysis_notes": true,
+          "has_final_answer": true
+        },
+        "output": {
+          "route": "judge",
+          "stop_reason": null
+        },
+        "metadata": {
+          "timestamp": "2026-05-06T04:49:50.534142+00:00",
+          "name": "workflow.supervisor",
+          "attributes": {
+            "route": "judge"
+          },
+          "input": {
+            "iteration": 3,
+            "route_history": [
+              "researcher",
+              "analyst",
+              "writer"
+            ],
+            "has_sources": true,
+            "has_research_notes": true,
+            "has_analysis_notes": true,
+            "has_final_answer": true
+          },
+          "output": {
+            "route": "judge",
+            "stop_reason": null
+          },
+          "duration_seconds": 4.710000939667225e-05,
+          "status": "ok",
+          "resourceAttributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.41.1",
+            "service.name": "unknown_service"
+          },
+          "scope": {
+            "name": "langfuse-sdk",
+            "version": "3.14.6",
+            "attributes": {
+              "public_key": "pk-lf-d7a58bae-cc8a-4181-a9ca-8d7aa26348ce"
+            }
+          }
+        },
+        "model": null,
+        "modelParameters": null,
+        "completionStartTime": null,
+        "promptId": null,
+        "promptName": null,
+        "promptVersion": null,
+        "latency": null,
+        "timeToFirstToken": null,
+        "usageDetails": {},
+        "costDetails": {},
+        "usagePricingTierId": null,
+        "usagePricingTierName": null,
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "totalPrice": 0,
+        "calculatedInputCost": null,
+        "calculatedOutputCost": null,
+        "calculatedTotalCost": 0,
+        "unit": "TOKENS",
+        "promptTokens": 0,
+        "completionTokens": 0,
+        "totalTokens": 0,
+        "modelId": null,
+        "usage": {
+          "unit": "TOKENS",
+          "input": 0,
+          "output": 0,
+          "total": 0
+        }
+      },
+      {
+        "id": "fd24cdd2de664a26",
+        "traceId": "45adebeae6acd514a00f418bbfc6614c",
+        "startTime": "2026-05-06T04:49:50.850Z",
+        "endTime": null,
+        "projectId": "cmotik77z02wqad086li7q3bz",
+        "parentObservationId": "c535df79762ae494",
+        "type": "EVENT",
+        "environment": "default",
+        "name": "workflow.judge",
+        "level": "DEFAULT",
+        "statusMessage": null,
+        "version": null,
+        "createdAt": "2026-05-06T04:49:51.270Z",
+        "updatedAt": "2026-05-06T04:49:51.270Z",
+        "input": {
+          "has_final_answer": true,
+          "source_count": 5
+        },
+        "output": {
+          "score": 10,
+          "passed": true,
+          "rationale": "Answer exists, includes citations, and has at least one source."
+        },
+        "metadata": {
+          "timestamp": "2026-05-06T04:49:50.849097+00:00",
+          "name": "workflow.judge",
+          "attributes": {
+            "passed": true
+          },
+          "input": {
+            "has_final_answer": true,
+            "source_count": 5
+          },
+          "output": {
+            "score": 10,
+            "passed": true,
+            "rationale": "Answer exists, includes citations, and has at least one source."
+          },
+          "duration_seconds": 0.00013299999409355223,
+          "status": "ok",
+          "resourceAttributes": {
+            "telemetry.sdk.language": "python",
+            "telemetry.sdk.name": "opentelemetry",
+            "telemetry.sdk.version": "1.41.1",
+            "service.name": "unknown_service"
+          },
+          "scope": {
+            "name": "langfuse-sdk",
+            "version": "3.14.6",
+            "attributes": {
+              "public_key": "pk-lf-d7a58bae-cc8a-4181-a9ca-8d7aa26348ce"
+            }
+          }
+        },
+        "model": null,
+        "modelParameters": null,
+        "completionStartTime": null,
+        "promptId": null,
+        "promptName": null,
+        "promptVersion": null,
+        "latency": null,
+        "timeToFirstToken": null,
+        "usageDetails": {},
+        "costDetails": {},
+        "usagePricingTierId": null,
+        "usagePricingTierName": null,
+        "inputPrice": 0,
+        "outputPrice": 0,
+        "totalPrice": 0,
+        "calculatedInputCost": null,
+        "calculatedOutputCost": null,
+        "calculatedTotalCost": 0,
+        "unit": "TOKENS",
+        "promptTokens": 0,
+        "completionTokens": 0,
+        "totalTokens": 0,
+        "modelId": null,
+        "usage": {
+          "unit": "TOKENS",
+          "input": 0,
+          "output": 0,
+          "total": 0
+        }
+      }
+    ],
+    "htmlPath": "/project/cmotik77z02wqad086li7q3bz/traces/45adebeae6acd514a00f418bbfc6614c",
+    "totalCost": 0
+  }
+]

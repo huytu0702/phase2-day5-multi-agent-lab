@@ -18,12 +18,19 @@ class Settings(BaseSettings):
     log_level: str = Field(default="INFO", validation_alias="LOG_LEVEL")
 
     openai_api_key: str | None = Field(default=None, validation_alias="OPENAI_API_KEY")
+    openai_base_url: str | None = Field(default=None, validation_alias="OPENAI_BASE_URL")
     openai_model: str = Field(default="gpt-5.4-mini", validation_alias="OPENAI_MODEL")
     openai_timeout_seconds: int = Field(default=60, ge=5, le=600, validation_alias="OPENAI_TIMEOUT_SECONDS")
     openai_max_retries: int = Field(default=2, ge=0, le=10, validation_alias="OPENAI_MAX_RETRIES")
 
     langsmith_api_key: str | None = Field(default=None, validation_alias="LANGSMITH_API_KEY")
     langsmith_project: str = Field(default="multi-agent-research-lab", validation_alias="LANGSMITH_PROJECT")
+
+    langfuse_public_key: str | None = Field(default=None, validation_alias="LANGFUSE_PUBLIC_KEY")
+    langfuse_secret_key: str | None = Field(default=None, validation_alias="LANGFUSE_SECRET_KEY")
+    langfuse_base_url: str | None = Field(default=None, validation_alias="LANGFUSE_BASE_URL")
+    langfuse_host: str | None = Field(default=None, validation_alias="LANGFUSE_HOST")
+    langfuse_v4_enabled: bool = Field(default=False, validation_alias="LANGFUSE_V4_ENABLED")
 
     tavily_api_key: str | None = Field(default=None, validation_alias="TAVILY_API_KEY")
     tavily_timeout_seconds: int = Field(default=30, ge=5, le=300, validation_alias="TAVILY_TIMEOUT_SECONDS")

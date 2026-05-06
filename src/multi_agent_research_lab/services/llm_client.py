@@ -6,6 +6,7 @@ Production note: agents should depend on this interface instead of importing an 
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass
 from time import sleep
 from typing import Any, TypeVar
@@ -88,8 +89,9 @@ class LLMClient:
         """Request a completion and parse the content into the given Pydantic model."""
 
         raw = self.complete(system_prompt, user_prompt)
+        payload_text = self._extract_json_payload(raw.content)
         try:
-            payload = json.loads(raw.content)
+            payload = json.loads(payload_text)
             return response_model.model_validate(payload)
         except (json.JSONDecodeError, PydanticValidationError) as exc:
             raise LLMRecoverableError("Structured LLM output is invalid") from exc
@@ -103,7 +105,23 @@ class LLMClient:
             from openai import OpenAI
         except ImportError as exc:
             raise LLMConfigError("openai package is required when sdk_client is not provided") from exc
-        return OpenAI(api_key=self._settings.openai_api_key)
+        return OpenAI(api_key=self._settings.openai_api_key, base_url=self._settings.openai_base_url)
+
+    @staticmethod
+    def _extract_json_payload(content: str) -> str:
+        text = content.strip()
+        if text.startswith("```"):
+            text = re.sub(r"^```(?:json)?\s*", "", text)
+            text = re.sub(r"\s*```$", "", text)
+
+        if text.startswith("{") and text.endswith("}"):
+            return text
+
+        start = text.find("{")
+        end = text.rfind("}")
+        if start >= 0 and end > start:
+            return text[start : end + 1]
+        return text
 
     @staticmethod
     def _extract_content(response: Any) -> str:
