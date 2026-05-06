@@ -1,77 +1,117 @@
-# Lab Guide: Multi-Agent Research System
+# Lab Guide: Multi-Agent Research System (Final Reported Version)
 
-## Scenario
+## Student
 
-Bạn cần xây dựng một research assistant có thể nhận câu hỏi dài, tìm thông tin, phân tích và viết câu trả lời cuối cùng. Lab yêu cầu so sánh hai cách làm:
+- **Họ và tên:** Nguyễn Huy Tú  
+- **MSV:** 2A202600170
 
-1. **Single-agent baseline**: một agent làm toàn bộ.
-2. **Multi-agent workflow**: Supervisor điều phối Researcher, Analyst, Writer.
+---
 
-## Quy tắc quan trọng
+## 1) Lab Objective
 
-- Không thêm agent nếu không có lý do rõ ràng.
-- Mỗi agent phải có responsibility riêng.
-- Shared state phải đủ rõ để debug.
-- Phải có trace hoặc log cho từng bước.
-- Phải benchmark, không chỉ nhìn output bằng cảm tính.
+Nâng cấp starter skeleton thành hệ thống multi-agent chạy thực tế, có thể:
+- thực thi pipeline nghiên cứu hoàn chỉnh,
+- tạo câu trả lời có dẫn chứng,
+- chấm chất lượng đầu ra,
+- quan sát được toàn bộ vòng đời xử lý qua trace.
 
-## Milestone 1: Baseline
+---
 
-File gợi ý:
+## 2) Implemented Scope
 
-- `src/multi_agent_research_lab/cli.py`
-- `src/multi_agent_research_lab/services/llm_client.py`
+### 2.1 Runtime & Model
+- Dùng `.venv` để chạy toàn bộ runtime/test.
+- LLM model runtime: `gpt-5.4-mini`.
+- Hỗ trợ OpenAI-compatible endpoint qua `OPENAI_BASE_URL`.
 
-TODO(student): thay baseline placeholder bằng một call LLM thật.
+### 2.2 Workflow
+- Multi-agent workflow build bằng LangGraph.
+- Route deterministic qua supervisor.
+- Có guardrail dừng an toàn theo state.
 
-## Milestone 2: Supervisor
+### 2.3 Agents
+- `Researcher`: lấy nguồn và tạo research notes.
+- `Analyst`: tạo phân tích có cấu trúc.
+- `Writer`: sinh final answer có citation + limitations.
+- `Judge/Critic`: chấm điểm và pass/fail verdict.
 
-File gợi ý:
+### 2.4 Observability
+- Local trace JSONL luôn bật.
+- Langfuse v4 bật theo env config.
+- Xác minh trace bằng CLI `lf` (traces + observations).
 
-- `src/multi_agent_research_lab/agents/supervisor.py`
-- `src/multi_agent_research_lab/graph/workflow.py`
+---
 
-TODO(student): implement routing policy.
+## 3) Work Completed (from production plan + session)
 
-Gợi ý câu hỏi thiết kế:
+### A. LLM integration improvements
+1. Nối `LLMClient` vào Analyst/Writer/Judge.
+2. Bổ sung retry + timeout sử dụng config thống nhất.
+3. Thêm `OPENAI_BASE_URL` vào settings và client builder.
 
-- Khi nào gọi Researcher?
-- Khi nào gọi Analyst?
-- Khi nào gọi Writer?
-- Khi nào stop?
-- Nếu agent fail thì retry hay fallback?
+### B. Output reliability improvements
+1. Robust JSON extraction cho structured judge output.
+2. Hậu xử lý đảm bảo section bắt buộc trong output:
+   - analysis có `Analysis Notes`, `Claims:`
+   - answer có `Citations:` và `Limitations:`
+3. Giảm lỗi do model trả về format không đồng nhất.
 
-## Milestone 3: Worker agents
+### C. Workflow quality improvements
+1. Route và stop reason rõ ràng trong state.
+2. Kiểm chứng route history thực tế theo đúng flow.
+3. Judge loop có rewrite budget + safe termination.
 
-File gợi ý:
+### D. Langfuse troubleshooting & fix
+1. Xác định đúng CLI có trong `.venv`: `lf`.
+2. Khắc phục lỗi 401 khi CLI chưa có đúng auth context.
+3. Đồng bộ tracer dùng settings app thay vì đọc env rời rạc.
+4. Xác nhận trace xuất hiện trên cloud và kiểm tra được node-level observations.
 
-- `agents/researcher.py`
-- `agents/analyst.py`
-- `agents/writer.py`
+---
 
-TODO(student): implement từng worker.
+## 4) Commands Used for Verification
 
-## Milestone 4: Trace và benchmark
+```bash
+# Run workflow thực tế
+python -m multi_agent_research_lab.cli multi-agent --query "..." --json
 
-File gợi ý:
+# Run test suite
+pytest -q
 
-- `observability/tracing.py`
-- `evaluation/benchmark.py`
-- `evaluation/report.py`
+# Langfuse CLI
+.venv/Scripts/lf.exe --help
+.venv/Scripts/lf.exe --host https://cloud.langfuse.com traces list --limit 10
+.venv/Scripts/lf.exe --host https://cloud.langfuse.com observations list --trace-id <TRACE_ID> --limit 50
+```
 
-Benchmark tối thiểu:
+---
 
-| Metric | Cách đo gợi ý |
-|---|---|
-| Latency | wall-clock time |
-| Cost | token usage hoặc provider usage |
-| Quality | rubric 0-10 do peer review |
-| Citation coverage | số claims có source / tổng claims chính |
-| Failure rate | số query fail / tổng query |
+## 5) Evidence Checklist
 
-## Exit ticket
+- [x] LLM thật chạy trong analyst/writer/judge
+- [x] Workflow route đúng `researcher -> analyst -> writer -> judge -> end`
+- [x] Judge trả về `score/passed/rationale`
+- [x] Output có citation + limitations
+- [x] Test suite pass
+- [x] Trace local ghi thành công
+- [x] Langfuse trace/observation kiểm tra được bằng CLI
 
-Mỗi nhóm trả lời 2 câu:
+---
 
-1. Case nào nên dùng multi-agent? Vì sao?
-2. Case nào không nên dùng multi-agent? Vì sao?
+## 6) Key Optimizations Summary
+
+1. **Config-driven runtime**: giảm hardcode, tăng tính tái cấu hình.
+2. **Structured-output robustness**: giảm fail do format model.
+3. **Deterministic orchestration**: route chuẩn, stop rõ ràng.
+4. **Observability reliability**: theo dõi được từng node và debug nhanh hơn.
+5. **Regression control**: validate lại bằng test sau mỗi thay đổi trọng yếu.
+
+---
+
+## 7) Final Result
+
+Triển khai đã đạt mức “lab production-ready” theo mục tiêu:
+- chạy được end-to-end,
+- có đánh giá chất lượng,
+- có khả năng truy vết đầy đủ,
+- phản ánh đúng các hạng mục đã cam kết trong production implementation plan và phần việc thực hiện trong session.
